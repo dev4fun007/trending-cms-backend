@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:500&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- index.css for this file -->
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <title>Trending</title>
+</head>
+
+<body>
+
+    <!-- Top Site Title And Quote ------------------------------------------------------------------------->
+    <div class="title-quote">
+        <a href="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            target="_blank">
+            <img class="img-fluid img-wallpaper"
+                src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="wallpaper of the day image">
+        </a>
+        <!-- Title & Quote of the day -->
+        <div class="quote-background" id="title-quote-div-id">
+            <div class="jumbotron jumbotron-background">
+                <h1 class="display-4 text-center site-title"><span class="t-decorate-title">[ t ]</span>rending</h1>
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0 quote">{{qod.quote}}</p>
+                    <footer class="blockquote-footer source"><cite title="{{qod.author}}">{{qod.author}}</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+        <div class="wallpaper-of-day">
+            wallpaper spotlight
+        </div>
+    </div>
+    <!-- Top Site Title And Quote Ends ------------------------------------------------------------------------->
+
+
+    <!-- Header Starts -------------------------------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white drop-shadow header-navbar">
+        <a class="navbar-brand" href="#">
+            <div class="header-title" id="header-title-id">
+                <span class="t-decorate">[ t ]</span><span class="site-title-nav">rending</span>
+            </div>
+        </a>
+
+        <!-- Collapse/Expand Button for smaller devices -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Category Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/category/technology">
+                    <span>Technology</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/smartphones">
+                    <span>Smartphones</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/entertainment">
+                    <span>Entertainment</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/gaming">
+                    <span>Gaming</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/android">
+                    <span>Android</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/apple">
+                    <span>Apple</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/apps">
+                    <span>Apps</span>
+                </a>
+                <a class="nav-item nav-link" href="/category/science">
+                    <span>Science</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Ends ------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <div class="vertical-spacer"></div>
+    <div class="vertical-spacer"></div>
+
+
+    <!-- Main Content/Categories *******************************************************************************************************************************-->
+    <div class="container-fluid content">
+
+        <!-- Cover/Banner Feed ----------------------------------------->
+        <div class="container">
+            <div class="row">
+
+                [{feed-banner} range 0 to 3]
+
+            </div>
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Cover/Banner Feed Ends ----------------------------------------->
+
+
+
+        <!-- Feed Group Collection 1 ====================================================================================================================================== -->
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-around">
+
+
+                [{feed-group} technology]
+
+
+                [{feed-group} smartphones]
+
+
+                [{feed-group} entertainment]
+
+
+            </div>
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Feed Group Collection 1 Ends Here ======================================================================================================================================== -->
+
+
+        <!-- Youtube Spotlight Section ---------------------------------->
+        <div class="container background-border">
+            <!-- Header Label -->
+            <div class="d-flex flex-column justify-content-around video-label">
+                <span>Youtube in spotlight</span>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Video Container -->
+            <div class="row">
+
+                [{feed-youtube} range 0 to 3]
+
+            </div>
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Youtube Spotlight Section Ends ---------------------------------->
+
+
+
+        <!-- Feed Group Collection 2 ====================================================================================================================================== -->
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-around">
+
+
+                [{feed-group} gaming]
+
+
+                [{feed-group} android]
+
+
+                [{feed-group} apple]
+
+
+            </div>
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Feed Group Collection 2 Ends Here ========================================================================================================================== -->
+
+
+
+
+        <!-- Grab these apps ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="container">
+
+            <div class="row d-flex flex-column justify-content-around">
+                <span class="app-section-label">Grab these apps</span>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row android">
+
+                [{feed-apps} range 0 to 4]
+
+            </div>
+
+            <div class="row android">
+
+                [{feed-apps} range 4 to 8]
+
+            </div>
+
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Grab these apps ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- Meme delight ------------------------------------------------------------------------------------------------------------------------------------------------------>
+        <div class="container">
+
+            <div class="row d-flex flex-column justify-content-around">
+                <span class="meme-section-label">Memes delight</span>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row d-flex flex-row justify-content-center align-items-center">
+
+                [{feed-meme} range 0 to 3]
+
+            </div>
+
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Meme delight ------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+        <!-- Feed Group Collection 3 ======================================================================================================================================== -->
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-center">
+
+
+                [{feed-group} apps]
+
+
+                [{feed-group} science]
+
+
+                [{feed-group} how-to]
+
+
+            </div>
+        </div>
+        <div class="vertical-spacer"></div>
+        <div class="vertical-spacer"></div>
+        <!-- Feed Group Collection 3 Ends ======================================================================================================================================== -->
+
+
+
+
+
+    </div>
+    <!-- Main Content ENDS ==================================================================================================================================================-->
+    <div class="vertical-spacer"></div>
+    <div class="vertical-spacer"></div>
+
+
+    <!-- Footer ******************************************************************************************************************************************************* -->
+    <div class="container-fluid footer">
+        <div
+            class="container footer-content d-flex flex-row justify-content-center align-items-center align-self-center">
+            Made with &nbsp;<span class="fas fa-heart fa-spin" style="color: rgb(200, 0, 0);"></span>
+        </div>
+    </div>
+    <!-- Footer ******************************************************************************************************************************************************* -->
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/bce8ac6763.js" crossorigin="anonymous"></script>
+    <!-- Title Fade -->
+    <script src="js/util.js"></script>
+</body>
+
+</html>

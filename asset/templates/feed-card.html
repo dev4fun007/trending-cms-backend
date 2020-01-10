@@ -1,0 +1,18 @@
+<!-- Feed Card -->
+<div class="feed-item-card">
+    <a href="{{article.path}}">
+        <figure>
+            <img class="img-fluid feed-card-image"
+                 src="{{article.image}}"
+                 alt="{{article.imageAlt}}">
+        </figure>
+        <div class="feed-card-title">
+            {{article.title}}
+        </div>
+        <div class="feed-card-summary">
+            <!-- <span class="feed-author"></span> -->
+            <time class="feed-time" datetime="{{article.datetime}}">{{article.datetime | date}}</time>
+        </div>
+    </a>
+</div>
+<div class="vertical-spacer"></div>

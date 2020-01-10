@@ -1,0 +1,22 @@
+<!-- App -->
+<div class="col-sm-3">
+    <a href="{{app.storeUrl}}" target="_blank">
+        <div class="row d-flex flex-row justify-content-center">
+            <figure>
+                <img class="img-fluid app-icon"
+                     src="{{app.iconUrl}}" alt="app icon image">
+            </figure>
+        </div>
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <span class="app-name align-self-sm-center">{{app.name}}</span>
+            <div class="d-flex flex-row justify-content-center">
+                <span class="strikethrough app-price align-self-sm-center">{{app.price}}</span>
+                <span class="app-free align-self-sm-center">Free</span>
+                <span class="app-rating align-self-sm-center">{{app.rating}} &nbsp;<span
+                            class="fas fa-star fa-spin" style="color: rgb(255, 174, 0);"></span></span>
+                <span class="icons8-google-play"></span>
+                <span class="icons8-apple-app-store"></span>
+            </div>
+        </div>
+    </a>
+</div>
