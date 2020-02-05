@@ -1,8 +1,8 @@
 <!-- Feed Group Starts -->
 <div class="col-sm-4 feed-group">
-    <a href="#">
+    <a href="{{feedgroup.categoryLink}}">
         <div class="feed-group-title display-4">
-            {{feedgroup.title}}
+            {{feedgroup.name}}
         </div>
     </a>
 
@@ -11,13 +11,13 @@
     <!-- Feed Card Ends-->
 
     <!-- Feed Line Group Starts-->
-    [{feed-line} range 0 to 5]
+    [{feed-line} range 1 to 6]
     <!-- Feed Line Group Ends-->
 
 
     <!-- More -->
     <div class="container">
-        <a href="#">
+        <a href="{{feedgroup.moreLink}}">
             <div class="row d-flex flex-row justify-content-center more-background">
                 <span class="fas fa-angle-double-down" style="color: rgb(0, 195, 255);"></span>
             </div>
